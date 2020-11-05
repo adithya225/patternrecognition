@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('randomforest.pkl', 'rb'))
+model = pickle.load(open('regressor.pkl', 'rb'))
 lb = pickle.load(open('lb', 'rb'))
 lb1 = pickle.load(open('lb1', 'rb'))
 lb2 = pickle.load(open('lb2', 'rb'))
